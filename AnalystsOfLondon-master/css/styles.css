@@ -19,32 +19,31 @@ body{
 	margin: 0;
 	border: 0;
 	padding: 0;
-	font-size:85%;
 
 }
 
 h1{
 	font-family: didot,serif;
-	font-size: 65px;
+	font-size: 40px;
 	color: #0C2943;
 }
 
 h2{
 	font-family: didot,serif;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: #0C2943;
 
 }
 
 h3{
 	font-family: didot,serif;
-	font-size: 25px;
+	font-size: 20px;
 	color: #0C2943;
 }
 
 
 p{
-	font-size: 1.1rem;
+	font-size: 1rem;
 	color: #0C2943;
 	line-height: 2;
 }
@@ -87,12 +86,11 @@ a{
 .bgImage{
 	position: absolute;
 	width: 100%;
-	height: 70%;
+	height: 100%;
 	background: url(../aol-bg.png) center;
 	background-size: cover;
-	top: 0;
+	top: -10%;
 	left: 0;
-	bottom:;
 	overflow:hidden;
 	z-index: -1;
 
@@ -111,9 +109,13 @@ a{
 }
 
 nav{
-	width: 80%;
-	margin: 0 auto;
-	line-height: 60px;
+	width: 100%;
+	margin-top:5px;
+}
+
+#navbar{
+	width:100%;
+	line-height:60px;
 	text-align: right;
 }
 
@@ -123,21 +125,34 @@ nav .logo{
 	text-decoration: none;
 	color: white;
 	font-size: 1rem;
+	margin-left:50px;
 	
 }
 
 nav a {
 	color: #f5f5f5;
 	text-decoration: none;
-	padding-left: 40px;
+	padding:0px 50px 0px 0px;
 	transition: all .5s;
 	text-shadow: 0px 0px 4px black;
 
 }
 
 nav a:hover{
-	color: #0C2943;
+	color: #ffffff;
 	text-shadow: 0px 0px 0px black;
+}
+
+
+.sticky {
+  position: fixed;
+  width:80%;
+  top: 0;
+  background:#2a5298;
+  z-index:3;
+  transition: all .5s;
+  margin-top:-5px;
+
 }
 
 .mobileNav{
@@ -152,7 +167,7 @@ nav a:hover{
 
 
 .heroContent{
-	margin:25vh 0 0 15%;
+	margin:30vh 0 0 15%;
 	z-index: ;
 }
 
@@ -186,7 +201,7 @@ nav a:hover{
 	right: 1.7%;
 	transform: rotate(270deg);
 	bottom: 63px;
-	background: #0C2943;
+	background: #2a5298;
 		padding:10px;
 }
 
@@ -290,43 +305,41 @@ margin-left: 30px;
 
 #team{
 	width:100%;
-	height:70vh;
+	height:80vh;
 }
 
 .flex{
-	width:200%;
-
+	width:100%;
+	margin-bottom: 15vh;
 }
 
 .flex-2{
 
-	width: 100%;
-	margin:3em auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	max-width:1500px;
-	position: absolute;
-
+ width: 80%;
+ margin:0 auto;
 
 }
 
 .flex-2 .flexItem {
-	margin: 10px;
-	flex: 1;
+	width:40%;
+	float: left;
 }
 
 .flex-2 img{
-	max-width: 70%;
+	max-width: 80%;
   margin:0 10%;
 }
 
+.flexItem-flextext{
+	width:50%;
+	height: auto 5%;
+	margin: 0px;
+	float: left;
+	padding:20px 0px;
+}
 
-.flex-2 p {
-	margin: 15px 0 30px 0;
-	color: #0C2943;
-	line-height: 25px;
-	opacity: 0.7;
+.flexItem-flextext p{
+margin: 25px 0px;
 }
 
 
@@ -409,11 +422,11 @@ margin-left: 30px;
 footer{
 	text-align: center;
 	padding: 20px 0px;
-	margin-top: 15em;
+	margin-top: 1em;
 }
 
 footer p{
-	margin:1em 0em 7em 0;
+	margin:1em 0em 2em 0;
 	opacity: .5;
 }
 
@@ -449,7 +462,6 @@ footer p{
   color:  #ff0000;
 
 }
-
 
 
 

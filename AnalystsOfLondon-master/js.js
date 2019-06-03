@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -40,5 +43,21 @@ $('nav').fadeOut(0);
 $('.scroll').fadeOut(0);
   $('.scroll').fadeIn(4500);
 
+  window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
 
 });
+
+
+

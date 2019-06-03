@@ -6,12 +6,23 @@
 	<meta charset="utf-8">
   <meta name="google" value="notranslate">
   	<title>Analysts Of London</title>
+
+
+
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+
+
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js">
   </script>
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
 
   <script src="js.js" charset="utf-8"></script>
 
@@ -20,7 +31,7 @@
 <body>
 
 	<div class="hero" id="home">
-		<nav>
+		<nav id ="navbar">
 
 			<a href="#" class="logo"><span class="logo_a">Analysts</span> Of London
       </a>
@@ -39,7 +50,7 @@
 
 		</nav>
 
-  		<div class="heroContent">
+  		<div class="heroContent" data-aos="flip-up">
   			<h1>Analysts Of London</h1>
 
   			 <a href="#" class="btn">Clear Actionable Solution</a>
@@ -80,21 +91,21 @@
 
   <h1>SERVICES</h1>
 
-  <div class="one-3 fade">
+  <div class="one-3" data-aos="fade-right">
     <i id="services-logo" class="fas fa-chart-line"></i>
     <h3>Service 1</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.</p>
   </div>
 
-  <div class="one-3">
+  <div class="one-3" data-aos="fade-up">
     <i id="services-logo" class="fas fa-chart-pie"></i>
     <h3>Service 2</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.</p>
   </div>
 
-  <div class="one-3">
+  <div class="one-3" data-aos="fade-left">
     <i id="services-logo" class="fas fa-chart-bar"></i>
     <h3>Service 3</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -107,22 +118,22 @@
 <div class="about">
       <h2>WHAT WE DO</h2>
       <div class="skill-row">
-        <img class="design-img-left" src="https://agencyanalytics.com/assets/feature/screenshot/facebook.png" alt="design image">
-        <div class="about-txt">
+        <img data-aos="fade-right" class="design-img-left" src="https://agencyanalytics.com/assets/feature/screenshot/facebook.png" alt="design image">
+        <div class="about-txt" data-aos="fade-left" >
           <h3>Input Systems</h3>
           <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>        
         </div>
       </div>
       <div class="skill-row">
-        <img class="design-img-right" src="https://agencyanalytics.com/assets/feature/screenshot/facebook.png" alt="design image">
-        <div class="about-txt">
+        <img data-aos="fade-left" class="design-img-right" src="https://agencyanalytics.com/assets/feature/screenshot/facebook.png" alt="design image">
+        <div class="about-txt" data-aos="fade-right">
             <h3>Forecasting</h3>
             <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
           </div>
       </div>
       <div class="skill-row">
-        <img class="design-img-left" src="https://agencyanalytics.com/assets/feature/screenshot/facebook.png" alt="design image">
-        <div class="about-txt">
+        <img data-aos="fade-right" class="design-img-left" src="https://agencyanalytics.com/assets/feature/screenshot/facebook.png" alt="design image">
+        <div class="about-txt" data-aos="fade-left">
           <h3>Worklist Organiser</h3>
           <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
         </div>
@@ -135,12 +146,12 @@
 	<div class = "flex">
 		<div class="flex-2">
 
-      		<div class="flexItem">
-      			<img src="images/team1.jpeg" alt="team" class="mobileHide">
+      		<div class="flexItem" data-aos="fade-right">
+      			<img data-aos="flip-up" src="images/team1.jpeg" alt="team" class="mobileHide">
       		</div>
 
 
-      			<div class="flexItem flextext">
+      			<div class="flexItem-flextext">
       				<h2>TEAM</h2>
       					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -216,7 +227,11 @@
 	</footer>
 
 
+<script type="text/javascript">
 
+
+  AOS.init({duration:1400,});
+</script>
 
 
 </body>
